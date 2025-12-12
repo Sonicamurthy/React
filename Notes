@@ -1,2 +1,64 @@
 1st episode
     Hello world in html,js,React js 
+
+
+    <!-- creating the h2 tag using the JS inside the body of the html file -->
+     
+        <script>     
+            const head=document.createElement("h2")
+            head.innerHTML="This is sonica and I will get a good job";
+
+            const data=document.getElementById("root")
+            data.appendChild(head);
+        </script> 
+
+        
+        <div id="parent">
+            <h1 id="child1">
+                <h2>Hello from child1</h2>   //creates object
+            </h1>
+            <h1 id="child2">
+                <h2>Hello from child2</h2>
+            </h1>                             //React(element)=>HTML(browser understands)
+         </div> 
+
+         <!-- Install this CDN links and creating the div tag using the react JS   -->
+
+         <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+
+        const head=React.createElement(            
+                "div",{id : "parent"},                  
+                [ React.createElement("h1",{id :"child1"},
+                React.createElement("p",{},"Hello from child1")),
+                 React.createElement("h1",{id :"child2"},
+                 React.createElement("p",{},"Hello from child2"))])       // It creates object 
+
+2nd
+    about NPM -creates package.json
+    parcel installation( parcel is type of Bundler)
+            -to run parcel -npx parcel index.html
+
+3rd 
+    about the components functional ,class
+    use of compannents
+    different type of uses
+
+     const jsxheading=<h1>hello jsx</h1>     //This is react element 
+
+     const Subapp = () =><h2>hello subapp</h2>
+
+
+        const Jsxheading = ()=> (
+        <div id="heading"> 
+            This is from JSX
+            <Subapp />    
+            {Subapp()}
+            </div>
+        )
+ 
+
+4th
+            Creating the food ordering app
+            
+    
